@@ -1,0 +1,27 @@
+﻿@model List<DataHolding.Models.Main.EmployeeRecord>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">District</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Entry Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var employee in Model)
+        {
+            <tr>
+                <td scope="row">@employee.Id</td>
+                <td scope="row">@employee.Name</td>
+                <td scope="row">@employee.Address</td>
+                <td scope="row">@employee.District</td>
+                <td scope="row">@employee.Phone</td>
+                <td scope="row">@employee.Dob</td>
+           </tr>   
+        }
+    </tbody>
+</table>
